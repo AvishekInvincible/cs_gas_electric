@@ -61,10 +61,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3rem;
+    padding: 0.8rem 2rem;
     background: var(--bg-color);
     border-radius: 16px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     box-shadow: 0 8px 32px var(--box-shadow-color);
     border: 1px solid var(--divider-color);
 }
@@ -77,7 +77,7 @@ body {
 
 .logo {
     width: auto;
-    height: 90px;
+    height: 150px;
 }
 
 .logo-container span {
@@ -113,26 +113,6 @@ body {
 
 .nav-links a:hover {
     color: var(--primary-color);
-}
-
-.get-service-btn {
-    margin-left: 3rem;
-    background: var(--primary-color);
-    color: var(--bg-color);
-    padding: 0.875rem 2rem;
-    border: none;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1.05rem;
-    cursor: pointer;
-    letter-spacing: -0.01em;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px var(--box-shadow-color);
-}
-
-.get-service-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px var(--box-shadow-color);
 }
 
 .nav-magnetic {
@@ -184,14 +164,20 @@ body {
 }
 
 .theme-switch {
-    background: transparent;
+    background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.theme-switch:hover {
+    background: var(--secondary-color);
 }
 
 .theme-switch svg {
@@ -223,6 +209,13 @@ body {
 
 .hero-image {
     justify-self: end;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    object-fit: contain;
 }
 
 .title-container {
@@ -312,6 +305,7 @@ h1 {
     background: var(--bg-color);
     box-shadow: 0 4px 12px var(--box-shadow-color);
     border: 1px solid var(--divider-color);
+    min-width: 250px;
 }
 
 .feature-card:hover {
@@ -321,8 +315,8 @@ h1 {
 }
 
 .feature-icon {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
     padding: 0.875rem;
     background: var(--secondary-color);
     border-radius: 50%;
@@ -343,13 +337,6 @@ h1 {
     color: var(--primary-color);
     font-size: 1.25rem;
     letter-spacing: -0.01em;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: contain;
 }
 
 .about-image img {
@@ -373,9 +360,10 @@ h1 {
 }
 
 .slide img {
-    width: 120px;
+    width: 250px;
     height: auto;
     object-fit: contain;
+    padding: 1rem;
 }
 
 /* Partners Section */
@@ -581,9 +569,10 @@ h2 {
 }
 
 .service-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
     margin-bottom: 1.5rem;
     display: block;
     margin-left: auto;
@@ -966,10 +955,6 @@ h2 {
         display: block;
     }
 
-    .get-service-btn {
-        display: none;
-    }
-
     .logo-container span {
         font-size: 1.2rem;
     }
@@ -986,11 +971,6 @@ h2 {
 
     .feature-cards {
         margin-top: 2rem;
-    }
-
-    .feature-card {
-        width: 100%;
-        margin: 0.5rem 0;
     }
 
     .partners-slider {
@@ -1189,5 +1169,48 @@ h2 {
     .testimonial-author img {
         width: 50px;
         height: 50px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-icon {
+        width: 160px;
+        height: 160px;
+    }
+
+    .slide img {
+        width: 300px;
+        min-height: 180px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .hero-image {
+        justify-self: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .service-card img {
+        max-width: 300px;
     }
 }

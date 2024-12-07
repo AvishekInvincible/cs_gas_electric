@@ -63,3 +63,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Add phone functionality
+document.querySelectorAll('.contact-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        if (this.classList.contains('text-now')) {
+            window.location.href = 'sms:07884012152';
+        } else {
+            window.location.href = 'tel:07884012152';
+        }
+    });
+});
